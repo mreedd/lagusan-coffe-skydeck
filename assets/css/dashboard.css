@@ -1,0 +1,279 @@
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--dark);
+  border-bottom: 1px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 100;
+  overflow: hidden; /* ensure any oversized logo doesn't spill out */
+}
+
+.navbar-brand h2 {
+  color: var(--secondary);
+  font-size: 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-logo {
+  max-height: 36px;   /* ensure it fits comfortably inside 60px navbar */
+  height: auto;
+  width: auto;
+  max-width: 220px;   /* prevent extremely wide logos */
+  display: block;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast; /* hint for crisp SVG scaling */
+}
+.navbar-logo img {
+  display: block;
+  height: 20px; /* exact height to fit inside 60px navbar */
+  width: auto;
+  max-width: 220px;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  height: 60px; /* match top-navbar height for perfect centering */
+  padding: 0 8px;
+}
+
+/* Smaller logo on narrow screens */
+@media (max-width: 600px) {
+  .navbar-logo {
+    max-height: 28px;
+  }
+  .brand-link {
+    height: 48px;
+  }
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--secondary);
+  font-size: 14px;
+}
+
+.user-role {
+  color: var(--white);
+  opacity: 0.7;
+}
+
+.btn-logout {
+  background: var(--primary);
+  color: var(--white);
+  padding: 6px 16px;
+  font-size: 13px;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 250px;
+  height: calc(100vh - 60px);
+  background: var(--dark);
+  border-right: 1px solid var(--primary);
+  padding: 24px 0;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  color: var(--secondary);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.main-content {
+  margin-left: 250px;
+  margin-top: 60px;
+  padding: 32px;
+  flex: 1;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
+  font-size: 32px;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #666;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-icon {
+  font-size: 32px;
+}
+
+.stat-info h3 {
+  font-size: 28px;
+  color: var(--dark);
+  margin-bottom: 4px;
+}
+
+.stat-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+/* Prevent grid children from stretching vertically and constrain chart heights */
+.charts-grid {
+  align-items: start; /* make all cards align to top */
+}
+
+.chart-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Explicit chart area to keep Chart.js canvas from expanding unexpectedly */
+.chart-card .chart-container {
+  width: 100%;
+  height: 320px; /* reasonable default height for charts */
+  display: block;
+  position: relative;
+}
+
+.chart-card .chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 720px; /* safety cap */
+  display: block;
+}
+
+/* Stronger override in case other CSS or libraries try to change canvas height */
+.chart-card .chart-container,
+.chart-card .chart-container canvas,
+.chart-container canvas {
+  height: 320px !important;
+  max-height: 720px !important;
+}
+
+.chart-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.chart-card h3 {
+  margin-bottom: 16px;
+  color: var(--dark);
+}
+
+.recent-orders {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.recent-orders h3 {
+  margin-bottom: 16px;
+  color: var(--dark);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.data-table th {
+  background: var(--light);
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.data-table td {
+  font-size: 14px;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-completed {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.badge-cancelled {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+}
+
+.badge-refunded {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+}

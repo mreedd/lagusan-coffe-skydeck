@@ -1,0 +1,98 @@
+| Item Name              | Category       | Quantity | Unit    | Reorder Level | Notes                     |
+| ---------------------- | -------------- | -------- | ------- | ------------- | ------------------------- |
+| Arabica Beans          | Coffee Beans   | 13.50    | kg      | 10.00         | For espresso-based drinks |
+| Robusta Beans          | Coffee Beans   | 8.00     | kg      | 8.00          | Backup blend              |
+| Milk                   | Dairy          | 20.00    | liters  | 10.00         | For lattes, cappuccino    |
+| Condensed Milk         | Dairy          | 10.00    | cans    | 5.00          | For sweet drinks          |
+| Fresh Cream            | Dairy          | 5.00     | liters  | 2.00          | For frappes               |
+| Chocolate Syrup        | Syrups         | 4.00     | bottles | 2.00          | For mocha drinks          |
+| Caramel Syrup          | Syrups         | 5.00     | bottles | 3.00          | For caramel drinks        |
+| Vanilla Syrup          | Syrups         | 6.00     | bottles | 3.00          | For vanilla latte         |
+| Hazelnut Syrup         | Syrups         | 4.00     | bottles | 3.00          | Popular flavor            |
+| Sugar                  | Ingredients    | 8.00     | kg      | 5.00          | White sugar               |
+| Brown Sugar            | Ingredients    | 6.00     | kg      | 4.00          | Used for milk teas        |
+| Ice                    | Ingredients    | 15.00    | kg      | 10.00         | Always keep stocked       |
+| Whipped Cream          | Ingredients    | 10.00    | cans    | 5.00          | For frappes               |
+| Coffee Cups (12oz)     | Cups           | 100.00   | pcs     | 50.00         | Hot drinks                |
+| Coffee Cups (16oz)     | Cups           | 80.00    | pcs     | 50.00         | Cold drinks               |
+| Cup Lids               | Supplies       | 120.00   | pcs     | 60.00         | For takeouts              |
+| Paper Straws           | Supplies       | 200.00   | pcs     | 100.00        | Environment-friendly      |
+| Napkins                | Supplies       | 300.00   | pcs     | 150.00        | For customers             |
+| Espresso Shot          | Prepared Items | 10.00    | shots   | 5.00          | Pre-pulled espresso       |
+| Spanish Latte          | Beverage       | 5.00     | cups    | 3.00          | Best-selling drink        |
+| Mocha                  | Beverage       | 6.00     | cups    | 3.00          | Chocolate-based coffee    |
+| Butterscotch Macchiato | Beverage       | 4.00     | cups    | 3.00          | Signature drink           |
+
+
+
+---
+
+### ☕ **Caramel Macchiato (product_id = 6)**
+
+* Arabica Beans — 0.03 kg
+* Milk — 0.25 L
+* Caramel Syrup — 0.03 L
+* Brown Sugar — 0.02 kg
+* Cup (16 oz) — 1 pc
+
+---
+
+### ☕ **Hazelnut Latte (product_id = 7)**
+
+* Arabica Beans — 0.03 kg
+* Milk — 0.25 L
+* Hazelnut Syrup — 0.03 L
+* Brown Sugar — 0.02 kg
+* Ice Cubes — 0.10 kg
+* Cup (16 oz) — 1 pc
+
+---
+
+### ☕ **Vanilla Latte (product_id = 8)**
+
+* Arabica Beans — 0.03 kg
+* Milk — 0.25 L
+* Vanilla Syrup — 0.03 L
+* Brown Sugar — 0.02 kg
+* Cup (16 oz) — 1 pc
+
+---
+
+### 🧊 **Iced Americano (product_id = 9)**
+
+* Arabica Beans — 0.04 kg
+* Ice Cubes — 0.15 kg
+* Cup (16 oz) — 1 pc
+
+---
+
+### 🧊 **Cold Brew (product_id = 10)**
+
+* Arabica Beans — 0.05 kg
+* Ice Cubes — 0.15 kg
+* Cup (16 oz) — 1 pc
+
+---
+
+### 🍫 **Chocolate Frappe (product_id = 11)**
+
+* Arabica Beans — 0.03 kg
+* Milk — 0.25 L
+* Brown Sugar — 0.03 kg
+* Ice Cubes — 0.20 kg
+* Cup (12 oz) — 1 pc
+
+---
+
+### 🍮 **Caramel Frappe (product_id = 12)**
+
+* Arabica Beans — 0.03 kg
+* Milk — 0.25 L
+* Caramel Syrup — 0.03 L
+* Brown Sugar — 0.02 kg
+* Ice Cubes — 0.20 kg
+* Cup (12 oz) — 1 pc
+
+---
+
+

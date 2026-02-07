@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="64" viewBox="0 0 320 64" preserveAspectRatio="xMinYMid meet" role="img" aria-label="Lagusan Skydeck">
+  <defs>
+    <style>
+      .text { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; font-weight: 600; fill: #ffffff; font-size: 18px; }
+      .cup { fill: #ffffff; }
+    </style>
+  </defs>
+  <!-- simple coffee cup icon -->
+  <g transform="translate(10,8)">
+    <rect x="0" y="18" width="28" height="12" rx="3" class="cup" opacity="0.95"/>
+    <path d="M4 6 C8 2,20 2,24 6 L24 14 C24 18,20 20,16 20 L6 20 C2 20,0 18,0 14 Z" class="cup"/>
+    <path d="M28 8 C34 6,36 10,36 14 C36 18,34 22,28 20" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- site name -->
+  <text x="52" y="38" class="text">Lagusan Skydeck</text>
+</svg>

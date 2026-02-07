@@ -1,0 +1,14 @@
+{
+    "name": "jmirenio2234qc/lagusan-coffee-skydeck",
+    "description": "Lagusan Coffee Skydeck Management System",
+    "type": "project",
+    "authors": [
+        {
+            "name": "jmirenio2234qc",
+            "email": "jmirenio2234qc@student.fatima.edu.ph"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^7.0"
+    }
+}
